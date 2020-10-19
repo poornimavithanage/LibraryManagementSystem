@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="379.0" prefWidth="778.0" style="-fx-background-color: #F8F8F8;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainFormController">
+   <children>
+      <AnchorPane prefHeight="384.0" prefWidth="165.0" style="-fx-background-color: #5F9EA0;">
+         <children>
+            <JFXButton fx:id="btnMember" layoutY="103.0" onAction="#btnMember_OnAction" onKeyReleased="#btnMember_OnKeyReleased" prefHeight="35.0" prefWidth="165.0" text="Member" textFill="#161616">
+               <effect>
+                  <Glow />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnBook" layoutY="138.0" onAction="#btnBook_OnAction" onKeyReleased="#btnBook_OnKeyReleased" prefHeight="35.0" prefWidth="165.0" text="  Book Details" textFill="#161616">
+               <effect>
+                  <Glow />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="btnBorrow" layoutY="173.0" onAction="#btnBorrow_OnAction" onKeyReleased="#btnBorrow_OnKeyReleased" prefHeight="35.0" prefWidth="165.0" text="Borrow" textFill="#161616">
+               <effect>
+                  <Glow />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="btnReturn" layoutY="208.0" onAction="#btnReturn_OnAction" onKeyReleased="#btnReturn_OnKeyReleased" prefHeight="35.0" prefWidth="165.0" text="Return" textFill="#161616">
+               <effect>
+                  <Glow />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></JFXButton>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="14.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/member.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="14.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/book.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="14.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/borrow.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="14.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/lend.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="subFormsAnchorPane" layoutX="165.0" prefHeight="384.0" prefWidth="613.0" style="-fx-background-color: #C9CBD1;">
+         <children>
+            <ImageView fitHeight="391.0" fitWidth="606.0" layoutX="4.0" layoutY="2.0" opacity="0.54" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/MainForm.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="31.0" layoutY="61.0" prefHeight="42.0" prefWidth="565.0" text="Library Management System">
+               <font>
+                  <Font name="Arial Bold" size="36.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
